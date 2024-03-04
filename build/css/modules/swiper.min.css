@@ -1,0 +1,63 @@
+*[role=button] {
+  cursor: pointer;
+}
+
+.swiper-pagination {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .swiper-pagination {
+    gap: 2rem;
+  }
+}
+.swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #161616;
+  margin: 0 !important;
+  opacity: 1;
+  transition: all 0.2s ease;
+  border: 2px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.swiper-pagination-bullet:hover {
+  border-color: #C0E00B;
+}
+.swiper-pagination-bullet-active {
+  background: #C0E00B;
+}
+.swiper-bttn {
+  min-width: 6.2rem;
+  height: 6.2rem;
+  background: #C0E00B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+@media only screen and (max-width: 576px) {
+  .swiper-bttn {
+    min-width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+.swiper-bttn:hover {
+  background: #abc70d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.swiper-bttn-prev:hover {
+  transform: translateX(-2px);
+}
+.swiper-bttn-prev:active {
+  transform: translateX(-5px) scale(0.97);
+}
+.swiper-bttn-next:hover {
+  transform: translateX(2px);
+}
+.swiper-bttn-next:active {
+  transform: translateX(5px) scale(0.97);
+}

@@ -1,0 +1,126 @@
+.features__img {
+  width: 50rem;
+  max-width: 100%;
+}
+.features__img img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+@media only screen and (max-width: 992px) {
+  .features__img {
+    display: none;
+  }
+}
+.features__wrap {
+  display: flex;
+  align-items: center;
+  gap: 136px;
+}
+@media (max-width: 1300px) {
+  .features__wrap {
+    gap: calc(0px + 136 * ((100vw - 375px) / 925));
+  }
+}
+.features-bttn {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.features-bttn-prev:hover {
+  transform: translateY(-2px);
+}
+.features-bttn-prev:active {
+  transform: translateY(-5px);
+}
+.features-bttn-next:hover {
+  transform: translateY(2px);
+}
+.features-bttn-next:active {
+  transform: translateY(5px);
+}
+.features__slider {
+  overflow: hidden;
+  width: 50rem;
+  max-width: 100%;
+  height: 50rem;
+}
+.features__slider .swiper-wrapper {
+  height: 50rem;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .features__slider {
+    width: 80%;
+    height: 55rem;
+  }
+  .features__slider .swiper-wrapper {
+    height: 55rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .features__slider {
+    height: 51rem;
+  }
+  .features__slider .swiper-wrapper {
+    height: 51rem;
+  }
+}
+.features__nav {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  flex-direction: column;
+}
+.features__nav .features-pagination {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  transform: unset;
+  align-items: center;
+}
+.features__slide {
+  transform: scale(0.78) !important;
+  opacity: 0.6;
+  height: auto !important;
+  transition: all 0.2s ease;
+}
+@media only screen and (max-width: 768px) {
+  .features__slide {
+    transform: scale(0.95) !important;
+  }
+}
+.features__slide.swiper-slide-active {
+  transform: scale(1) !important;
+  opacity: 1;
+}
+.features__slide-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.features__slide-header h3 {
+  width: 16.6rem;
+  max-width: 100%;
+}
+.features__slide-img {
+  width: 5.4rem;
+  height: 5.4rem;
+  background: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.features__slide-img img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}

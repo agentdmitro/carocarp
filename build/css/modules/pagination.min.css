@@ -1,0 +1,80 @@
+.page-numbers.prev, .page-numbers.next {
+  font-size: 0 !important;
+  width: 6.2rem;
+  height: 6.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #C0E00B;
+  border-radius: 50%;
+  margin: 0 4.2rem !important;
+}
+.page-numbers.prev::before, .page-numbers.next::before {
+  content: "";
+  display: block;
+  width: 6.2rem;
+  height: 6.2rem;
+  mask-image: url(../img/icons/slide_next.svg);
+  -webkit-mask-image: url(../img/icons/slide_next.svg);
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #fff;
+}
+@media only screen and (max-width: 576px) {
+  .page-numbers.prev, .page-numbers.next {
+    margin: 0 1rem !important;
+    width: 4rem;
+    height: 4rem;
+  }
+  .page-numbers.prev::before, .page-numbers.next::before {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.page-numbers.prev {
+  transform: rotate(180deg);
+}
+
+.woocommerce-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+@media only screen and (max-width: 576px) {
+  .woocommerce-pagination {
+    margin-top: 3rem;
+  }
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+  border: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #161616;
+}
+@media only screen and (max-width: 576px) {
+  .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+    font-size: 2rem;
+  }
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
+  background: transparent;
+  color: #C0E00B;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a.prev:hover, .woocommerce nav.woocommerce-pagination ul li a.next:hover {
+  background: #abc70d;
+}

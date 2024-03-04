@@ -1,0 +1,57 @@
+.inst__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+@media only screen and (max-width: 992px) {
+  .inst__wrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .inst__wrap > div {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.inst__content {
+  width: 60.5rem;
+  max-width: 100%;
+}
+.inst__content p {
+  width: 50rem;
+  max-width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .inst__content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.inst__images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  width: max-content;
+  max-width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .inst__images {
+    grid-gap: 0.2rem;
+  }
+}
+.inst__img {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 4/4;
+  overflow: hidden;
+  cursor: pointer;
+}
+.inst__img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.2s ease;
+}
+.inst__img:hover img {
+  transform: scale(1.09);
+}
